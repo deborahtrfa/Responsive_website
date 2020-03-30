@@ -20,6 +20,7 @@ img{
 	width: 95%;
 	margin: 0 auto;
 }
+
 /* typography*/
 
 .title{
@@ -33,6 +34,12 @@ img{
 	font-size: .9em;
 }
 
+@media (min-width: 60rem){
+	.title {
+		font-size: 3.7rem;
+	}
+
+}
 /* buttons */
 
 .button{
@@ -45,12 +52,29 @@ img{
 	display: inline-block;
 }
 
+.button-accent{
+	color: #00ff6c;
+	border-color: #00ff6c;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+	background: #00ff6c;
+	color: #232323;
+
+}
+
+@media (min-width: 60rem){
+	.button {
+		font-size: 1.5rem;
+	}
+}
 
 /* header */
 
 header {
 	position: absolute; 
-	margin-top: 1em;
+	margin: 1em;
 	left: 0;
 	right: 0;
 }
@@ -80,6 +104,12 @@ nav a:focus{
 	color: #DDD;
 }
 
+@media (min-width: 60rem){
+	.logo{
+		float: left;
+	}
+}
+
 
 /* home-hero */
 
@@ -87,6 +117,15 @@ nav a:focus{
 	background-image: url(../img/hero-bg.jpg);
 	padding: 10em 0;
 	color: #FFF;
+	background-size: cover;
+	background-position: center;
+}
+
+@media (min-width: 60rem){
+	.home-hero{
+		height: 100vh;
+		padding-top: 35vh;
+	}
 }
 
 
