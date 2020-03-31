@@ -33,7 +33,7 @@ footer:after {
 /*columm system*/
 
 
-[class^=col-]: first-child {
+[class^=col-] :: first-child {
 	padding-left: 0;
 	margin-top: 0; 
 
@@ -51,12 +51,12 @@ footer:after {
 	padding: 0 .5em;
 	margin-top: 1em;
 }
-[class^=col-]: first-child {
+[class^=col-]:: first-child {
 	padding-left: 0;
 
 }
 
-[class^=col-]: last-child {
+[class^=col-]:: last-child {
 	padding-right: 0;
 
 }
@@ -212,6 +212,7 @@ nav ul{
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	text-align: right;
 }
 
 nav li{
@@ -291,10 +292,9 @@ nav a:focus{
 /* portfolio */
 
 .portfolio{
-	margin: 0;
+	margin: 0em;
 
 }
-
 .port-desc{
 	position: absolute;
 	z-index: 100;
@@ -302,7 +302,7 @@ nav a:focus{
 	left: 0em;
 	right: 0em;
 	color: white;
-	background: rgba(0,0,0,.75);
+	background: rgba(0,0,0,0.75);
 	padding-bottom: 1em;
 	overflow: hidden;
 
@@ -311,6 +311,8 @@ nav a:focus{
 .port-item{
 	position: relative;
 	margin: 0;
+	margin-left: 0;
+	margin-right: 0;
 
 
 }
@@ -356,9 +358,9 @@ nav a:focus{
 footer{
 	background: #232323;
 	color: #FFF;
-	text-align: left;
-	padding: 5em 0;
-
+	text-align: center;
+	padding: 0;
+	margin: 0;
 }
 
 
